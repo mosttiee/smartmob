@@ -38,6 +38,9 @@ public class FloodMessageActivity extends AppCompatActivity {
 
         //do the flooding msg function
 
+        Intent intent = new Intent(this, FloodMessageActivity.class);
+        startActivity(intent);
+
     }
 
     @Override
