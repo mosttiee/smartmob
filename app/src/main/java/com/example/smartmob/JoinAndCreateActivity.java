@@ -14,6 +14,11 @@ public class JoinAndCreateActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void onCreateGroupBtn(View v){
+        Intent intent = new Intent(this, CreateGroupActivity.class);
+        startActivity(intent);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +28,13 @@ public class JoinAndCreateActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 onJoinBtn(v);
+            }
+        });
+
+        final Button createGroup = findViewById(R.id.createGroupButton);
+        createGroup.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                onCreateGroupBtn(v);
             }
         });
     }

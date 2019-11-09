@@ -8,7 +8,7 @@ import android.widget.RadioButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class RegisterActivity extends AppCompatActivity {
+public class CreateGroupActivity extends AppCompatActivity {
 
     public int type = 1;
 
@@ -26,13 +26,18 @@ public class RegisterActivity extends AppCompatActivity {
                 if (checked)
                     type = 2;
                     break;
+            case R.id.emergency:
+                if (checked)
+                    type = 3;
+                break;
         }
     }
 
 
-    protected void onRegister(View v){
+    protected void onCreate(View v){
         //TODO: Connect to backend
 
+        //TODO: Link to message activity
         Intent intent = new Intent(this, LoginActivity.class);
         startActivity(intent);
     }
@@ -40,12 +45,12 @@ public class RegisterActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register);
+        setContentView(R.layout.activity_create_group);
 
         final Button register_button = findViewById(R.id.createGroupButton);
         register_button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                onRegister(v);
+                onCreate(v);
             }
         });
     }
