@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class CreateGroupActivity extends AppCompatActivity {
 
-    protected void onCreate(View v){
+    protected void onCreate(){
         //TODO: Connect to backend
 
         //TODO: Link to message activity
@@ -26,7 +26,7 @@ public class CreateGroupActivity extends AppCompatActivity {
         final Button register_button = findViewById(R.id.createGroupButton);
         register_button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                onCreate(v);
+                onCreate();
             }
         });
     }

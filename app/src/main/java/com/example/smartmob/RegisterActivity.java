@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class RegisterActivity extends AppCompatActivity {
 
-    public int type = 1;
+    public String userType = "";
 
     public void onRadioButtonClicked(View view) {
         // Is the button now checked?
@@ -18,13 +18,13 @@ public class RegisterActivity extends AppCompatActivity {
 
         // Check which radio button was clicked
         switch(view.getId()) {
-            case R.id.normal:
+            case R.id.leader:
                 if (checked)
-                    type = 1;
+                    userType = "leader";
                     break;
-            case R.id.secret:
+            case R.id.protester:
                 if (checked)
-                    type = 2;
+                    userType = "protester";
                     break;
         }
     }

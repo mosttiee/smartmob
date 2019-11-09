@@ -9,14 +9,12 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-
-
-    protected void onLoginBtn(View v){
+    protected void onLoginBtn(){
         Intent intent = new Intent(this, LoginActivity.class);
         startActivity(intent);
     }
 
-    protected void onClickRegisterBtn(View v){
+    protected void onClickRegisterBtn(){
         Intent intent = new Intent(this, RegisterActivity.class);
         startActivity(intent);
     }
@@ -29,14 +27,14 @@ public class MainActivity extends AppCompatActivity {
         final Button button = findViewById(R.id.loginButton);
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                onLoginBtn(v);
+                onLoginBtn();
             }
         });
 
         final Button register_button = findViewById(R.id.registerButton);
         register_button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                onClickRegisterBtn(v);
+                onClickRegisterBtn();
             }
         });
     }

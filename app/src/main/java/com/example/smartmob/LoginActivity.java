@@ -11,8 +11,13 @@ public class LoginActivity extends AppCompatActivity {
 
 
     public void onSubmitBtn(View v){
+        //if user is a leader
         Intent intent = new Intent(this, JoinAndCreateActivity.class);
         startActivity(intent);
+
+        //if user is a protester
+        //Intent intent = new Intent(this, JoinActivity.class);
+        //startActivity(intent);
     }
 
 
