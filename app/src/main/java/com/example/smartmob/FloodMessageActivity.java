@@ -1,6 +1,6 @@
 package com.example.smartmob;
 
-import android.content.Intent;
+//import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -33,13 +33,11 @@ public class FloodMessageActivity extends AppCompatActivity {
     }
 
     public void onSubmitBtn(View v){
-        //to check the type of msg
-        onRadioButtonClicked(v) ;
 
         //do the flooding msg function
 
-        Intent intent = new Intent(this, FloodMessageActivity.class);
-        startActivity(intent);
+//        Intent intent = new Intent(this, FloodMessageActivity.class);
+//        startActivity(intent);
 
     }
 
