@@ -11,8 +11,13 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    public void onLoginBtn(View v){
+    protected void onLoginBtn(View v){
         Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
+    }
+
+    protected void onClickRegisterBtn(View v){
+        Intent intent = new Intent(this, RegisterActivity.class);
         startActivity(intent);
     }
 
@@ -25,6 +30,13 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 onLoginBtn(v);
+            }
+        });
+
+        final Button register_button = findViewById(R.id.registerButton);
+        register_button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                onClickRegisterBtn(v);
             }
         });
     }
