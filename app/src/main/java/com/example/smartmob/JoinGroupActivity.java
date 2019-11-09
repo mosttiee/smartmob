@@ -7,22 +7,22 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class JoinAndCreateActivity extends AppCompatActivity {
+public class JoinGroupActivity extends AppCompatActivity {
 
-    public void onJoinBtn(View v){
-        Intent intent = new Intent(this, JoinGroupActivity.class);
+    public void onSubmitBtn(View v){
+        Intent intent = new Intent(this, FloodMessageActivity.class);
         startActivity(intent);
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_join_and_create);
+        setContentView(R.layout.activity_join_group);
 
-        final Button button = findViewById(R.id.joinNewGroupButton);
+        final Button button = findViewById(R.id.submitButton);
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                onJoinBtn(v);
+                onSubmitBtn(v);
             }
         });
     }

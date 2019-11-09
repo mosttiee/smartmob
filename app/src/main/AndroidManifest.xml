@@ -24,6 +24,12 @@
         <activity android:name=".JoinActivity">
 
         </activity>
+        <activity android:name=".JoinGroupActivity">
+
+        </activity>
+        <activity android:name=".FloodMessageActivity">
+
+        </activity>
     </application>
 
 </manifest>
