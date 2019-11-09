@@ -10,30 +10,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class CreateGroupActivity extends AppCompatActivity {
 
-    public int type = 1;
-
-    public void onRadioButtonClicked(View view) {
-        // Is the button now checked?
-        boolean checked = ((RadioButton) view).isChecked();
-
-        // Check which radio button was clicked
-        switch(view.getId()) {
-            case R.id.normal:
-                if (checked)
-                    type = 1;
-                    break;
-            case R.id.secret:
-                if (checked)
-                    type = 2;
-                    break;
-            case R.id.emergency:
-                if (checked)
-                    type = 3;
-                break;
-        }
-    }
-
-
     protected void onCreate(View v){
         //TODO: Connect to backend
 
