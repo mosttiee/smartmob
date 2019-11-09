@@ -19,6 +19,12 @@
         <activity android:name=".LoginActivity">
 
         </activity>
+        <activity android:name=".JoinAndCreateActivity">
+
+        </activity>
+        <activity android:name=".JoinActivity">
+
+        </activity>
     </application>
 
 </manifest>

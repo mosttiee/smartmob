@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+//        setContentView(R.layout.activity_join_and_create);
         setContentView(R.layout.activity_landing);
 
         final Button button = findViewById(R.id.loginButton);
